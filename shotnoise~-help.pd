@@ -1,0 +1,7 @@
+#N canvas 0 22 450 300 10;
+#X obj 167 110 shotnoise/shotnoise~ 0.1 20000;
+#X obj 213 210 dac~;
+#X text 67 264 v 0.9;
+#X text 41 242 (C) Paulo Casaes \, 2014 Apache License 2;
+#X connect 0 0 1 0;
+#X connect 0 1 1 1;

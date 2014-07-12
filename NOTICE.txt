@@ -1,0 +1,6 @@
+bandlimited~
+    Copyright [2014] Paulo Casaes
+
+      This product includes software developed at
+      Gitorious (https://gitorious.org/shotnoise).
+
