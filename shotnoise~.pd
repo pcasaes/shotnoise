@@ -1,4 +1,5 @@
 #N canvas 485 243 887 570 10;
+#X declare -stdpath iemlib;
 #X obj 178 42 noise~;
 #X obj 172 146 *~;
 #X obj 248 106 poisson~;
@@ -19,7 +20,7 @@
 #X msg 343 224 roomsize 0.85;
 #X obj 346 178 loadbang;
 #X msg 312 28 20000;
-#X floatatom 336 101 5 0 0 0 - - -;
+#X floatatom 336 101 5 0 0 0 - - -, f 5;
 #X obj 306 70 * 0.000324;
 #X obj 313 128 sig~;
 #X obj 247 342 outlet~;
@@ -34,6 +35,7 @@
 #X obj 178 206 *~ 0;
 #X text 43 398 v 0.9;
 #X text 17 376 (C) Paulo Casaes \, 2014 Apache License 2;
+#X obj 523 60 declare -stdpath iemlib;
 #X connect 0 0 1 0;
 #X connect 0 0 2 0;
 #X connect 1 0 3 0;
