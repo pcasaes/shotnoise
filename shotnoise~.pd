@@ -36,6 +36,9 @@
 #X text 43 398 v 0.9;
 #X text 17 376 (C) Paulo Casaes \, 2014 Apache License 2;
 #X obj 523 60 declare -stdpath iemlib;
+#X obj 493 129 print shotnoise~ depends on;
+#X msg 500 105 iemlib;
+#X obj 496 82 loadbang;
 #X connect 0 0 1 0;
 #X connect 0 0 2 0;
 #X connect 1 0 3 0;
@@ -63,3 +66,5 @@
 #X connect 21 0 20 0;
 #X connect 22 0 4 0;
 #X connect 22 0 4 1;
+#X connect 27 0 26 0;
+#X connect 28 0 27 0;

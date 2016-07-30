@@ -1,7 +1,7 @@
 #N canvas 351 141 770 458 10;
 #X obj -50 260 inlet~;
 #X obj -28 431 outlet~;
-#N canvas 1012 563 450 300 factorial 0;
+#N canvas 657 374 450 300 factorial 0;
 #X obj 125 28 inlet;
 #X obj 159 259 outlet;
 #X obj 135 142 cyclone/counter;
@@ -31,13 +31,13 @@
 #X connect 10 0 9 0;
 #X connect 11 0 10 1;
 #X restore 300 94 pd factorial;
-#X floatatom 334 45 5 0 0 0 - - -;
+#X floatatom 334 45 5 0 0 0 - - -, f 5;
 #X obj 230 196 inlet~;
 #X obj -31 331 *~ 32;
 #X obj 124 312 tabsend~ \$0.dist;
 #X obj 26 158 phasor~;
 #X obj 51 62 samplerate~;
-#X floatatom 74 108 5 0 0 0 - - -;
+#X floatatom 74 108 5 0 0 0 - - -, f 5;
 #X obj 57 20 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X msg 97 139 0;
@@ -67,6 +67,9 @@
 #X obj 5 410 *~;
 #X text 209 410 v 0.9;
 #X text 183 388 (C) Paulo Casaes \, 2014 Apache License 2;
+#X obj 496 82 loadbang;
+#X obj 493 129 print poisson depends on;
+#X msg 500 105 cyclone;
 #X connect 0 0 23 0;
 #X connect 0 0 24 0;
 #X connect 2 0 15 0;
@@ -92,3 +95,5 @@
 #X connect 23 0 5 0;
 #X connect 24 0 25 1;
 #X connect 25 0 1 0;
+#X connect 28 0 30 0;
+#X connect 30 0 29 0;
